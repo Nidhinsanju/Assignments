@@ -7,8 +7,9 @@ function counter(n) {
   if (count <= n) {
     console.log(count);
     count = count + 1;
-  }
+  }else{
+    clearInterval(intervalID)
 }
-setInterval(function () {
+var intervalID= setInterval(function () {
   counter(10);
 }, 1000);
